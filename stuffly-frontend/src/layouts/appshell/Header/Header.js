@@ -25,7 +25,7 @@ function Header() {
       <a id="hamburger" href="#" onClick={(e) => openDrawer(e)}>
         ☰
       </a>
-      <h1 class="logo">Stuffly®</h1>
+      <h1 class="logo">WMS</h1>
       <nav id="drawer" class="nav">
         <ul class="nav__list">
           <AiOutlineClose

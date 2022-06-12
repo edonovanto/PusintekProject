@@ -30,8 +30,8 @@
 
 .catalog__list {
   display: grid;
-  row-gap: 20px;
-  column-gap: 20px;
+  row-gap: 50px;
+  column-gap: 50px;
   margin: 0 40px;
 }
 
@@ -40,7 +40,7 @@
   flex-direction: column;
   background-color: rgb(255, 255, 255);
   min-height: 300px;
-  border-radius: 10px;
+  border-radius: 20px;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
@@ -121,6 +121,10 @@
   padding: 10px 50px;
 }
 
+.catalog__pagination {
+  margin-right: 40px;
+}
+
 /* BUTTON EDIT & DELETE */
 .btn-item__edit:hover,
 .btn-item__delete:hover {
@@ -154,6 +158,10 @@
   .catalog__none {
     padding: 15px 100px;
   }
+
+  .catalog__pagination {
+    margin-right: 80px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -170,5 +178,9 @@
 
   .catalog__title {
     font-size: 28px;
+  }
+
+  .catalog__pagination {
+    margin-right: 100px;
   }
 }

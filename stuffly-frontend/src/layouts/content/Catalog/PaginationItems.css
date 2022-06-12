@@ -1,6 +1,7 @@
 .pagination-class {
   float: none;
   margin-right: 40px;
+  cursor: pointer;
 }
 
 .pagination-class ul {
@@ -11,13 +12,17 @@
   overflow: hidden;
 }
 
-.pagination-class ul li {
+.pagination-class ul li a {
+  color: #263238;
   padding: 0.5rem;
 }
 
-.pagination-class ul li.selected {
-    background-color: brown;
-  }
+.pagination-class ul li.selected a {
+  font-weight: 300;
+  border-radius: 15px;
+  background-color: #407bff;
+  color: #fbfbfb !important;
+}
 
 @media only screen and (min-width: 520px) {
   .pagination-class {
@@ -27,8 +32,8 @@
 }
 
 @media only screen and (min-width: 769px) {
-    .pagination-class {
-      float: right;
-      margin-right: 100px;
-    }
+  .pagination-class {
+    float: right;
+    margin-right: 100px;
   }
+}
