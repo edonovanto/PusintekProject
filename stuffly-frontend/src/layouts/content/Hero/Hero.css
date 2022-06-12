@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+
+.hero {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("https://images.unsplash.com/photo-1543221423-7c9b7c16778c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-size: cover;
+}
+
+.hero__inner {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero__title {
+  font-family: "Pattaya", sans-serif;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.hero__tagline {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.hero-search {
+  margin-top: -50px;
+  width: 100%;
+}
+
+.hero-search__inner {
+  background-color: #ff7b7b;
+  color: rgb(255, 255, 255);
+  padding: 20px 0;
+  margin: 0 15%;
+  border-radius: 15px;
+  border: transparent;
+  text-decoration: none;
+  text-shadow: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.295);
+}
+
+.row-search {
+  padding: 0 5% !important;
+}
+
+.btn-search-barang {
+  background-color: goldenrod;
+  border: transparent;
+}
+
+.form-control-search {
+  border-radius: 20px;
+  border: transparent;
+}
+
+.create-barang-text {
+  font-size: 10px;
+  padding: 5px 0px 0px 10px;
+}
+
+.create-barang-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 520px) {
+  .create-barang-text {
+    font-size: 13px;
+  }
+}

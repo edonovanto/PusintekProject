@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+
+/* HEADER */
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  background-color: #ff5252;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: min-height 0.3s;
+}
+
+#hamburger {
+  text-align: left;
+  grid-column-start: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+.logo {
+  text-align: center;
+  grid-column-start: 2;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: "Pattaya", sans-serif;
+  display: inline-block;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+/* NAVIGATION */
+
+#drawer {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  transform: translate(-250px, 0);
+  transition: transform 0.3s ease-in-out;
+  background-color: #ff5252;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
+#drawer.open {
+  transform: translate(0, 0);
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 15px 5px;
+  margin: 0;
+  text-align: right;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: block;
+  min-height: 44px;
+  text-align: left;
+  line-height: 24px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.nav__icon {
+  margin-right: 10px;
+}
+
+.nav__close {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav__close:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 520px) {
+  header {
+    grid-template-columns: 1fr auto 0.05fr;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .logo {
+    grid-column-start: 1;
+    text-align: left;
+    font-size: 28px;
+    padding-left: 26px;
+    color: #ff5252;
+  }
+
+  #drawer {
+    grid-column-start: 2;
+    position: relative;
+    transform: translate(0, 0);
+    width: 400px;
+    height: fit-content;
+    background-color: transparent;
+  }
+
+  /* NAV */
+
+  .nav__list {
+    padding: 0;
+  }
+
+  .nav__item {
+    padding: 16px 16px;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .nav__icon {
+    display: none;
+  }
+
+  .nav__close {
+    display: none;
+  }
+
+  .nav a {
+    color: grey;
+  }
+
+  #hamburger {
+    display: none;
+  }
+}
