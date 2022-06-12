@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import { Switch } from "react-router";
+import React, { useState } from 'react';
+import { Switch } from 'react-router';
 
 // appshell
-import HeaderComponent from "../layouts/appshell/Header/Header";
+import HeaderComponent from '../layouts/appshell/Header/Header';
 
 // main
-import Hero from "../layouts/content/Hero/Hero";
-import Catalog from "../layouts/content/Catalog/Catalog";
+import Hero from '../layouts/content/Hero/Hero';
+import Catalog from '../layouts/content/Catalog/Catalog';
+import Footer from '../layouts/appshell/Footer/Footer';
 
 function Router(props) {
   return (

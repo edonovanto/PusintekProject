@@ -46,7 +46,7 @@ function Header() {
             </a>
           </li>
           <li class="nav__item">
-            <a href="https://www.edonovanto.tech/" target="_blank">
+            <a className="about_me" href="https://www.edonovanto.tech/" target="_blank">
               <AiFillMeh size="1em" className="nav__icon" />
               About Me
             </a>
