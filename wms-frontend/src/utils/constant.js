@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://127.0.0.1:8000';
+export const BASE_URL = 'https://thawing-brushlands-89668.herokuapp.com';
 
 // READ
 export const GET_ALL_STUFF = BASE_URL + '/api/barangs';
